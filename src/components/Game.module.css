@@ -1,0 +1,129 @@
+.gameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.gameBoard {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  border: 2px solid #333;
+  background: #f0f0f0;
+  background-image: linear-gradient(#ddd 1px, transparent 1px),
+                    linear-gradient(90deg, #ddd 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.snakeHead {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background-color: #e74c3c;
+  border-radius: 8px;
+}
+
+.snakeBody {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background-color: #2ecc71;
+  border-radius: 8px;
+}
+
+.snakeTail {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background-color: #3498db;
+  border-radius: 8px;
+}
+
+.item {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background-color: #f1c40f;
+  border: 2px solid #f39c12;
+}
+
+.scoreBoard {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  gap: 20px;
+}
+
+.lives {
+  color: #e74c3c;
+}
+
+.mode {
+  color: #2980b9;
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.pauseButton {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pauseButton:hover {
+  background-color: #2980b9;
+}
+
+.gameOver {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.startScreen {
+  text-align: center;
+  padding: 20px;
+}
+
+.startButton, .restartButton {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.startButton:hover, .restartButton:hover {
+  background-color: #27ae60;
+}
+
+.instructions {
+  margin-top: 20px;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.instructions p {
+  margin: 5px 0;
+}
